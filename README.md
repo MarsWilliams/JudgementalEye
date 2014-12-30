@@ -1,3 +1,3 @@
 Judgemental Eye: A Movie Rating App
 ===================================
-Head on over to [the tutorial](http://hackbrightacademy.github.io/ratings/) for instructions.
+This movie rating app uses machine learning to guess users' ratings based on similarities to other users.
