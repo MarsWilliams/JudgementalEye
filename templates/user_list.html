@@ -1,0 +1,26 @@
+<html>
+<html>
+<head>
+    </style>
+        <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="/static/css/bootstrap-theme.min.css">
+    <style> 
+        body {
+            margin: 50px ;
+        }
+    </style>
+</head>
+    <div class="page-header">
+        <h1><span class="label label-primary">User List</span></h1>
+    </div>
+    {% for user in user_list %}
+        {% if user.ratings %}
+            <p>User <a href="/home/{{user.id}}">{{ user.id }}</a>, age {{ user.age }}, has {{ user.ratings|length }} ratings.</p>
+        {% else %}
+            <p>User {{ user.id }}, age {{ user.age }}, has {{ user.ratings|length }} ratings.</p> 
+        {% endif %}
+    {% endfor %}
+</html>
